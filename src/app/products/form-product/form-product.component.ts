@@ -17,7 +17,7 @@ export class FormProductComponent implements OnInit {
     private route: Router, private path :ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.id = this.path.snapshot.params["id"]gith
+    this.id = this.path.snapshot.params["id"]
     this.product= new Product()
     if (this.id){
       this.product = this.productService.listProduct.filter((product)=> product.id ==this.id)[0]
